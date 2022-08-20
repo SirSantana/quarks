@@ -11,9 +11,7 @@ export default function Home() {
   const {data, loading, error} = useQuery(GETUSERS)
 
   console.log(data, loading, error);
-  if(error){
-    return <h2>Ha ocurrido un error{error}</h2>
-  }
+  
   if(loading){
     return <h3>Cargando---</h3>
   }
@@ -28,13 +26,6 @@ export default function Home() {
 
       <main className={styles.main}>
         <h2>Hola</h2>
-        {/* {data?.users?.map(el=>(
-         <>
-         <h2>{el.name}</h2>
-          <h2>{el.email}</h2>
-          <h2>{el.ciudad}</h2>
-         </> 
-        ))} */}
       </main>
 
       <footer className={styles.footer}>
