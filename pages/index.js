@@ -28,13 +28,13 @@ export default function Home() {
 
       <main className={styles.main}>
         <h2>Hola</h2>
-        {data?.users.map(el=>(
+        {/* {data?.users?.map(el=>(
          <>
          <h2>{el.name}</h2>
           <h2>{el.email}</h2>
           <h2>{el.ciudad}</h2>
          </> 
-        ))}
+        ))} */}
       </main>
 
       <footer className={styles.footer}>
