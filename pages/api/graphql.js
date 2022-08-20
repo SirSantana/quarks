@@ -4,7 +4,13 @@ import { typeDefs } from '../../graphql/schema'
 import Cors from 'micro-cors'
 
 const cors = Cors()
-const apolloServer = new ApolloServer({typeDefs, resolvers})
+
+const corsOptions = {
+    origin: "https://quarks-beta.vercel.app/api/graphql",
+    credentials: true
+  };
+
+const apolloServer = new ApolloServer({typeDefs, resolvers,cors:corsOptions})
 
 
 const startServer = apolloServer.start()
