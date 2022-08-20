@@ -1,5 +1,4 @@
 import {gql} from 'apollo-server-micro'
-import DBConnect from '../libs/dbConnect'
 
 
 export const typeDefs = gql`

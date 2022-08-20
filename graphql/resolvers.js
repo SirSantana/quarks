@@ -1,9 +1,7 @@
-import DBConnect from "../libs/dbConnect"
 import BooksModel from "../models/BooksModel"
 import userModel from "../models/userModel"
 
 
-DBConnect()
 let data =[
     {
         name:'Miguel',
