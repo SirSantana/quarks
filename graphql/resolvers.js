@@ -1,4 +1,3 @@
-import { UserInputError } from "apollo-server-micro"
 import BooksModel from "../models/BooksModel"
 import userModel from "../models/userModel"
 
@@ -23,12 +22,7 @@ let data =[
 export const resolvers = {
     Query:{
         users:async()=>{
-            const users = userModel.find({})
-            try {
-                await users 
-            } catch (error) {
-                throw new UserInputError(error.message)
-            }
+            return userModel.find({})
         },
         countUser:()=>userModel.collection.countDocuments(),
         books:async()=>{
