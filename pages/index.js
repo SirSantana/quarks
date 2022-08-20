@@ -12,7 +12,7 @@ export default function Home() {
 
   console.log(data, loading, error);
   if(error){
-    return <h2>Ha ocurrido un error</h2>
+    return <h2>Ha ocurrido un error{error}</h2>
   }
   if(loading){
     return <h3>Cargando---</h3>
