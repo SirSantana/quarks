@@ -26,7 +26,7 @@ export const resolvers = {
         },
         countUser:()=>userModel.collection.countDocuments(),
         books:async()=>{
-            BooksModel.find({})
+            BooksModel.find({}).then(res=> console.log(res)).catch(err=> console.log(err))
         }
     },
     Mutation:{
