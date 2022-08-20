@@ -6,7 +6,7 @@ import Cors from 'micro-cors'
 const cors = Cors()
 
 const corsOptions = {
-    origin: "https://quarks-beta.vercel.app/api/graphql",
+    origin: "https://quarks-beta.vercel.app/",
     credentials: true
   };
 
