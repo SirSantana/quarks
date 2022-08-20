@@ -10,9 +10,7 @@ export default function Home() {
   const {data, loading, error} = useQuery(GETUSERS)
 
   console.log(data, loading, error);
-  if(error){
-    return <h2>Ha ocurrido un error{error}</h2>
-  }
+  
   if(loading){
     return <h3>Cargando---</h3>
   }
